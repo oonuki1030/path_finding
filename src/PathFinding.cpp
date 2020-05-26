@@ -1,15 +1,19 @@
 #include <iostream>
+#include<stdlib.h>
 #include "board.h"
+
+
 
 int main()
 {
-    Board board;
+	Board board;
 
-    Point* start = new Point(8, 8);
-    Point* goal = new Point(1, 1);
-    board.find(*start, *goal);
+	Point* start = new Point(8, 8);
+	Point* goal = new Point(1, 1);
+	board.find(*start, *goal);
 
-    board.show();
+	board.show();
 
-    system("PAUSE");
+	system("PAUSE");
 }
+
